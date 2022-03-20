@@ -1,38 +1,29 @@
 ## Debian 11 amd64 - Package install of ver 7.2 piaware, dump1090-fa, piaware-web, dump978-fa
 
-_**Command 1:** This command is long. Please scroll right to see and copy it in FULL._ 
+### STEP-1: Add this repository to list of apt sources by following 3 commands:
+_**First two commands are long. Please scroll right to see and copy them in FULL.**_
 ```
-sudo wget -O /etc/apt/sources.list.d/abcd567a.list https://abcd567a.github.io/debian/abcd567a.list
+sudo wget -O /etc/apt/sources.list.d/abcd567a.list https://abcd567a.github.io/debian/abcd567a.list  
 ```
-</br>
-
-_**Command 2:** This command is long. Please scroll right to see and copy it in FULL._ 
 ```
-sudo wget -O - https://abcd567a.github.io/debian/KEY.gpg | sudo apt-key add - 
+sudo wget -O - https://abcd567a.github.io/debian/KEY.gpg | sudo apt-key add -  
 ```
-</br>
-
-_**Command 3:**_</br>
 ```
 sudo apt update  
 ```
 
+</br>
 
-</br></br>
-
-_**Commands 4, 5, 6, and 7:**_</br>
+### STEP-2: Install packages
 ```
 sudo apt install piaware  
 ```
-
 ```
 sudo apt install dump1090-fa  
 ```
-
 ```
 sudo apt install piaware-web  
 ```
-
 ```
 sudo reboot  
 ```
