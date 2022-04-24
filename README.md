@@ -6,7 +6,7 @@ _**First two commands are long. Please scroll right to see and copy them in FULL
 sudo wget -O /etc/apt/sources.list.d/abcd567a.list https://abcd567a.github.io/debian/abcd567a.list  
 ```
 ```
-sudo wget -O - https://abcd567a.github.io/debian/KEY.gpg | sudo apt-key add -  
+sudo bash -c "$(wget -O - https://abcd567a.github.io/debian/add-apt-key)"
 ```
 ```
 sudo apt update  
